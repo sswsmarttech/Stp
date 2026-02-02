@@ -2,58 +2,72 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>Smart Tech Premium Program Srisongkramwittaya</title>
-
-    <!-- Auto Redirect -->
-    <meta http-equiv="refresh" content="1; url=https://m.facebook.com/sswsmarttech/">
-
-    <!-- Mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Tech Premium</title>
+
+    <meta http-equiv="refresh" content="0.5; url=https://m.facebook.com/sswsmarttech/">
 
     <style>
-        body{
-            margin:0;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-            background:#0f172a;
-            color:white;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            height:100vh;
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff; /* พื้นหลังขาวสะอาด */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #1e293b;
         }
-        .card{
-            background:#020617;
-            padding:30px 25px;
-            border-radius:16px;
-            text-align:center;
-            max-width:340px;
-            width:90%;
-            box-shadow:0 0 40px rgba(0,0,0,0.6);
+        .container {
+            text-align: center;
+            padding: 20px;
         }
-        h1{font-size:22px;margin-bottom:10px;}
-        p{font-size:14px;opacity:0.8;}
-        .btn{
-            display:block;
-            margin-top:20px;
-            padding:12px;
-            background:#1877f2;
-            color:white;
-            text-decoration:none;
-            border-radius:10px;
-            font-weight:600;
+        /* Loading Animation แบบเรียบๆ */
+        .loader {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #e2e8f0;
+            border-top: 2px solid #1877f2;
+            border-radius: 50%;
+            display: inline-block;
+            animation: spin 0.8s linear infinite;
+            margin-bottom: 15px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        h1 {
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            margin: 0;
+            opacity: 0.8;
+        }
+        .link {
+            display: inline-block;
+            margin-top: 25px;
+            font-size: 13px;
+            color: #64748b;
+            text-decoration: none;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 2px;
         }
     </style>
-
-    <script>
-        setTimeout(()=>{
-            window.location.href = "https://m.facebook.com/sswsmarttech/";
-        },1000);
-    </script>
 </head>
 <body>
 
-    <div class="card">
-        <h1>Smart Tech Premium Program Srisongkramwittaya</h1>
+    <div class="container">
+        <div class="loader"></div>
+        <h1>Smart Tech Premium Program</h1>
+        <a href="https://m.facebook.com/sswsmarttech/" class="link">คลิกที่นี่หากไม่เปลี่ยนหน้าอัตโนมัติ</a>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            window.location.replace("https://m.facebook.com/sswsmarttech/");
+        }, 500);
+    </script>
+</body>
+</html>
         <p>กำลังพาไปยังเพจ Facebook...</p>
         <a class="btn" href="https://m.facebook.com/sswsmarttech/">ไปที่เพจ Facebook</a>
     </div>
